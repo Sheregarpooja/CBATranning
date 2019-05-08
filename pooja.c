@@ -1,15 +1,14 @@
-#include <stdio.h>
-#include <math.h>
-
 int main()
-{    
-    float num=6 , cubeRoot;
-    //printf("enter a number");
-    //scanf("%f",&num);
-    
-
-    cubeRoot =  cbrt(num);
-    printf("Cube root of %f =  %f", num, cubeRoot);
-
-    return 0;
-} 
+{
+  int c, n=8, fact = 1;
+ 
+  //printf("Enter a number to calculate its factorial\n");
+  //scanf("%d", &n);
+ 
+  for (c = 1; c <= n; c++)
+    fact = fact * c;
+ 
+  printf("Factorial of %d = %d\n", n, fact);
+ 
+  return 0;
+}
